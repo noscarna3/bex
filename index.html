@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 면접 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-panel">
+      <div class="conversation" id="conversation"></div>
+      <div
+        class="input-area"
+        id="input-area"
+        contenteditable="true"
+        role="textbox"
+        aria-label="질문 입력 영역"
+        spellcheck="false"
+        placeholder="여기에 질문을 입력하세요..."
+      ></div>
+    </div>
+
+    <div class="right-panel">
+      <div class="summary-list" id="summary-list"></div>
+      <div class="button-group">
+        <button class="button" id="submit-btn">채용</button>
+        <button class="button" id="reset-btn">탈락</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="input-mirror"></div>
+  <script src="script.js"></script>
+</body>
+</html>
