@@ -2,35 +2,37 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI 면접 게임</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="main-container">
-    <div class="left-panel">
-      <div class="conversation" id="conversation"></div>
-      <div
-        class="input-area"
-        id="input-area"
-        contenteditable="true"
-        role="textbox"
-        aria-label="질문 입력 영역"
-        spellcheck="false"
-        placeholder="여기에 질문을 입력하세요..."
-      ></div>
+  <div class="container" id="main-interface">
+    <!-- 왼쪽: AI 대화 영역 -->
+    <div class="interview-area">
+      <div class="chat-box" id="chat-box">
+        <!-- AI 자기소개 및 대화 내용이 여기에 표시됨 -->
+      </div>
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="여기에 질문을 입력하세요..." />
+        <button id="send-btn">질문하기</button>
+      </div>
+      <div class="remaining" id="question-count">질문 가능 횟수: 15</div>
     </div>
 
+    <!-- 오른쪽: 요약 및 채용/탈락 -->
     <div class="right-panel">
-      <div class="summary-list" id="summary-list"></div>
-      <div class="button-group">
-        <button class="button" id="submit-btn">채용</button>
-        <button class="button" id="reset-btn">탈락</button>
+      <div class="summary-content" id="summary-box">
+        <!-- 요약된 AI 답변 내용 -->
       </div>
+      <div class="action-buttons">
+        <button id="hire-btn">채용</button>
+        <button id="reject-btn">탈락</button>
+      </div>
+      <div class="result-box" id="result-box"></div>
     </div>
   </div>
 
-  <div id="input-mirror"></div>
   <script src="script.js"></script>
 </body>
 </html>
