@@ -113,8 +113,8 @@ button {
   align-self: flex-start;
   text-align: left; 
   color: white;
-  padding: 10px 14px;
+  padding: 10px 14ㅋpx;
   border-radius: 10px;
   margin: 6px 0;
-  max-width: 100%;
+  max-width: 60%;
 }
