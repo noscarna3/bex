@@ -14,10 +14,10 @@
         <!-- AI 자기소개 및 대화 내용이 여기에 표시됨 -->
       </div>
       <div class="input-area">
-        <input type="text" id="user-input" placeholder="여기에 질문을 입력하세요..." />
+        <input type="text" id="user-input" placeholder="여기에 질문을 입력하세요..." autocomplete="off" />
         <button id="send-btn">질문하기</button>
       </div>
-      <div class="remaining" id="question-count">질문 가능 횟수: 10</div>
+      <div class="remaining" id="question-count">질문 가능 횟수: 5</div>
     </div>
 
     <!-- 오른쪽: 요약 및 채용/탈락 -->
@@ -32,6 +32,9 @@
       <div class="result-box" id="result-box"></div>
     </div>
   </div>
+
+  <!-- AI 리스트 렌더링용 임시 div -->
+  <div style="display:none" id="ai-container"></div>
 
   <script src="script.js"></script>
 </body>
